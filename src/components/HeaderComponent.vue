@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <header class="header">
     <div class="container header__wrapper">
@@ -49,6 +47,7 @@
     width: 40px;
     height: 40px;
     margin-right: 8px;
+    user-select: none;
     img {
       position: absolute;
       top: 50%;
@@ -61,6 +60,7 @@
   &__buttons {
     display: flex;
     gap: 12px;
+    user-select: none;
   }
   &__button {
     border-radius: 100%;

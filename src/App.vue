@@ -1,5 +1,6 @@
 <script setup>
 import HeaderComponent from './components/HeaderComponent.vue'
+import FooterComponent from './components/FooterComponent.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import HeaderComponent from './components/HeaderComponent.vue'
   <main>
     <!-- <TheWelcome /> -->
   </main>
+  <FooterComponent />
 </template>
 
 <style scoped></style>
