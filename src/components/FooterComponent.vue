@@ -13,14 +13,16 @@ const onActiveLanguageChange = newLanguage => {
 <template>
   <footer class="footer">
     <div class="container footer__wrapper">
-      <img src="./icons/logo_footer.svg" alt="logo" />
+      <div class="footer__logo">
+        <img src="../assets/icons/logo_footer.svg" alt="logo" />
+      </div>
       <a href="/" class="footer__link"><h4>Политика конфедиальности</h4></a>
       <a href="mailto:pinkchicken@adaurum.ru" class="footer__link"
-        ><img src="./icons/mail.svg" alt="e-mail" />
+        ><img src="../assets/icons/mail.svg" alt="e-mail" />
         <h4>pinkchicken@adaurum.ru</h4></a
       >
       <div class="footer__languages">
-        <img src="./icons/global.svg" alt="languages" />
+        <img src="../assets/icons/global.svg" alt="languages" />
         <h4
           v-for="lng in languages"
           class="footer__language"
@@ -31,6 +33,14 @@ const onActiveLanguageChange = newLanguage => {
           {{ lng }}
         </h4>
       </div>
+      <div class="footer__socials">
+        <a href="https://telegram.me/groupname" target="_blank"
+          ><img src="../assets/icons/telegram.svg" alt="Telegram"
+        /></a>
+        <a href="https://wa.me/79200000000" target="_blank"
+          ><img src="../assets/icons/whatsup.svg" alt="WhatsUp"
+        /></a>
+      </div>
     </div>
   </footer>
 </template>
@@ -39,9 +49,20 @@ const onActiveLanguageChange = newLanguage => {
 .footer {
   background-color: var(--neutral-secondary);
   padding: 30px 0;
+  &__logo {
+    width: 40%;
+  }
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  &__content {
+    display: flex;
+    gap: 65px;
+    flex-wrap: wrap;
   }
   &__link {
     display: flex;
@@ -67,6 +88,11 @@ const onActiveLanguageChange = newLanguage => {
         color: var(--primary);
       }
     }
+  }
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }
 </style>

@@ -1,23 +1,27 @@
 <template>
   <header class="header">
     <div class="container header__wrapper">
-      <img alt="logo" class="header__logo" src="./icons/logo.svg" />
+      <img alt="logo" class="header__logo" src="../assets/icons/logo.svg" />
       <div class="header__content">
         <div class="header__item">
           <div class="header__icon">
-            <img src="./icons/convert.svg" alt="convert" />
+            <img src="../assets/icons/convert.svg" alt="convert" />
           </div>
           <h3>5%</h3>
         </div>
         <div class="header__item">
           <div class="header__icon">
-            <img src="./icons/user.svg" alt="user" />
+            <img src="../assets/icons/user.svg" alt="user" />
           </div>
           <h3>Username@adaurum.ru</h3>
         </div>
         <div class="header__buttons">
-          <button class="header__button"><img src="./icons/settings.svg" alt="settings" /></button>
-          <button class="header__button"><img src="./icons/login.svg" alt="login" /></button>
+          <button class="header__button">
+            <img src="../assets/icons/settings.svg" alt="settings" />
+          </button>
+          <button class="header__button">
+            <img src="../assets/icons/login.svg" alt="login" />
+          </button>
         </div>
       </div>
     </div>
