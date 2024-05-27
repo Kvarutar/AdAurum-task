@@ -27,12 +27,49 @@
 #app {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--neutral);
 }
 
 .container {
   max-width: 85%;
   margin: 0 auto;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--neutral-thirdly);
+  border-radius: 8px;
+}
+
+.chat {
+  ::-webkit-scrollbar-thumb {
+    right: -10px;
+  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neutral-thirdly);
+}
+
+@media (max-width: 1152px) {
+  #app {
+    height: auto;
+  }
+}
+
+@media (max-width: 888px) {
+  .container {
+    max-width: 95%;
+  }
 }

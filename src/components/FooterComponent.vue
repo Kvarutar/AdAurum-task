@@ -49,6 +49,7 @@ const onActiveLanguageChange = newLanguage => {
 .footer {
   background-color: var(--neutral-secondary);
   padding: 30px 0;
+  margin-top: 60px;
   &__logo {
     width: 40%;
   }

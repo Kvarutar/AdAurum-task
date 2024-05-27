@@ -1,9 +1,3 @@
-<template>
-  <button class="btn" :class="'btn_' + mode" :disabled="disabled" @click="onClick">
-    <slot></slot>
-  </button>
-</template>
-
 <script>
 export default {
   name: 'CustomButton',
@@ -18,12 +12,18 @@ export default {
   methods: {
     onClick(event) {
       if (!this.disabled) {
-        this.$emit('click', event)
+        this.$emit('onClick', event)
       }
     },
   },
 }
 </script>
+
+<template>
+  <button class="btn" :class="'btn_' + mode" :disabled="disabled" @click="onClick">
+    <slot></slot>
+  </button>
+</template>
 
 <style scoped lang="scss">
 .btn {
